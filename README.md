@@ -123,3 +123,11 @@ docker exec -it <Docker Image> sh
 
 We will use nginx and Docker for production. There will be two phases, a build phase and a run phase.
 <img src="./assets/phases.png">
+
+# Travis CI
+The purpose of Travis CI is to run our test suite 
+Here is what we need to tell Travis in our development workflow:
+- Tell Travis we need a copy of docker running
+- Build our image using Dockerfile.dev
+- Tell Travis how to run our test suite
+- Tell Travis how to deploy our code to AWS
